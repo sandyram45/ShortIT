@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('work.urls')),
     path('', include('ShortIt.urls')),
+    path('', include('Krybin.urls')),
 ]

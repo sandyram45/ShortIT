@@ -15,7 +15,7 @@ def url_home(request):
 
         if form.is_valid():
             url = 'http://127.0.0.1:8000/'
-            slug = ''.join(random.choices(string.ascii_lowercase, k=2))
+            slug = ''.join(random.choices(string.ascii_letters, k=4))
             final_url = slug
             finish = urlEntry.objects.create(url=original_url, shortened_url=final_url)
             final_shortened_url = finish.shortened_url

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krybin</title>
+</head>
+<body>
+    {% block content %}
+    <form method="GET">
+        <h1>Welcome to Krybin</h1>
+        {% csrf_token %}
+        {{form.as_p}}
+    </form>
+    {% endblock %}
+</body>
+</html>
